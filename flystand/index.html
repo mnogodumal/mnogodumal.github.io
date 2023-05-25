@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Главная страница</title>
+
+    <meta name="description" content="Place the meta description text here." />
+    <meta name=”robots” content="index, follow" />
+
+    <meta name="format-detection" content="telephone=no">
+
+  <script type="module" crossorigin src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__column">
+                    <div class="logo">
+                        <a href="/" class="logo__link">
+                            <img src="./assets/img/main-logo.png" alt="logo" class="logo__picture">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__column header__column_stretch">
+                    <div class="header__column-inner">
+                        <div class="header__select">
+                            <div id="modal-city-anchor" class="select-anchor">
+                                <svg width="14" height="20" viewBox="0 0 14 20" fill="currentColor"
+                                    class="select-anchor__img" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.00111 11L7 11C6.24388 11 5.50645 10.7711 4.88107 10.3447C4.25594 9.91849 3.77172 9.31483 3.48657 8.61236C3.20148 7.91006 3.12719 7.13839 3.27228 6.39412C3.41738 5.64976 3.77602 4.96331 4.30589 4.42262C4.83597 3.88172 5.51382 3.511 6.25483 3.3606C6.99598 3.21016 7.76398 3.28756 8.46083 3.5821C9.15746 3.87654 9.74959 4.37375 10.1647 5.0077C10.5797 5.64143 10.8 6.38443 10.8 7.14286V7.14393C10.7989 8.15984 10.4031 9.13779 9.69322 9.86218C8.98265 10.5872 8.01489 10.9989 7.00111 11ZM6.34658 19.2282C6.75086 19.7203 7 20 7 20C7 20 7.24914 19.7203 7.65342 19.2282C9.39207 17.1116 14 11.0648 14 6.42857C14 2.87991 10.8644 0 7 0C3.13556 0 0 2.87991 0 6.42857C0 11.0648 4.60793 17.1116 6.34658 19.2282ZM7 18.4475C7.09646 18.329 7.20044 18.1998 7.31082 18.0609C7.9535 17.2521 8.80908 16.117 9.66283 14.8102C10.5183 13.5009 11.3605 12.0364 11.9863 10.5678C12.6162 9.08939 13 7.66818 13 6.42857C13 3.51063 10.394 1 7 1C3.60601 1 1 3.51063 1 6.42857C1 7.66818 1.38377 9.08939 2.01372 10.5678C2.63946 12.0364 3.48174 13.5009 4.33717 14.8102C5.19092 16.117 6.0465 17.2521 6.68918 18.0609C6.79956 18.1998 6.90354 18.329 7 18.4475ZM7 10C6.44621 10 5.90486 9.83243 5.4444 9.51849C4.98395 9.20454 4.62506 8.75831 4.41314 8.23624C4.20121 7.71416 4.14576 7.13969 4.2538 6.58546C4.36184 6.03123 4.62851 5.52213 5.0201 5.12255C5.41169 4.72297 5.9106 4.45086 6.45375 4.34061C6.99689 4.23037 7.55988 4.28695 8.07151 4.5032C8.58315 4.71945 9.02045 5.08566 9.32811 5.55551C9.63578 6.02537 9.8 6.57777 9.8 7.14286C9.79919 7.90036 9.50393 8.62661 8.979 9.16225C8.45408 9.69789 7.74236 9.99917 7 10Z" />
+                                </svg>
+                                <span id="modal-city-output" class="select-anchor__text">Санкт-Петербург</span>
+                            </div>
+                        </div>
+                        <div class="header__column-paragraph">
+                            <p class="block-title"><a href="tel:88123170014" class="link">+7 (812) 317-00-14</a></p>
+                            <a href="mailto:zakaz@flystand.ru" class="link">zakaz@flystand.ru</a>
+                        </div>
+                    </div>
+                    <div class="header__column-inner">
+                        <div class="header__column-paragraph disflex">
+                            <a href="/" class="link-full-dress">
+                                <img src="./assets/img/wa-icon.svg" alt="" class="link-full-dress__img">
+                                <span class="link-full-dress__text">Написать в мессенджер</span>
+                            </a>
+                            <div class="link-icon__wrapper">
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/vk-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/ig-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/yt-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__column-paragraph disflex">
+                            <p class="header__column-text"><span class="header__column-text_bold">Офис и шоурум:</span>
+                                Санкт-Петербург, ул. Мебельная, 2/3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo__grid">
+                    <h5 class="promo__title">Левитирующие сувениры и левитационные рекламные<br>
+                        конструкции. Производство/аренда/продажа</h5>
+                    <nav class="navbar header__navbar" id="navbar">
+                        <div class="navbar__content">
+                            <ul class="navbar__list">
+                                <li class="navbar__list-item">
+                                    <div class="dropdown">
+                                        <span class="navbar__list-link dropdown__case">Услуги</span>
+                                        <div class="dropdown__content">
+                                            <a href="/" class="dropdown__link">Индивидуальные проекты</a>
+                                            <a href="/" class="dropdown__link">Застройка выставок</a>
+                                            <a href="/" class="dropdown__link">Аренда левитационных стоек и платформ</a>
+                                            <a href="/" class="dropdown__link">Левитационные сувениры Flystand</a>
+                                            <a href="/" class="dropdown__link">Кейтеринг и левитация</a>
+                                            <a href="/" class="dropdown__link">Левитационные стенды для промо акций</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="/" class="navbar__list-link">О нас</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="/" class="navbar__list-link">Технология</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="/" class="navbar__list-link">Портфолио</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="/" class="navbar__list-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="section hero">
+            <div class="container">
+                <div class="hero__body">
+                    <div class="banner-media-back hero__glass">
+                        <div class="media-back media-back_linear-back">
+                            <video preload autoplay muted loop poster="./assets/img/poster.png" class="video-banner">
+                                <source src="./assets/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="banner-media-back__content hero__glass-content">
+                            <h1 class="title title_white hero__title">Контакты</h1>
+
+                            <div class="content-divider hero__glass-content-info">
+                                <div class="content-divider__item">
+                                    <a href="/" class="btn btn-icon">
+                                        <img src="./assets/img/pc-icon.svg" alt="" class="btn-icon__img">
+                                        <span class="btn__text">Презентация</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__grid">
+                        <div class="hero__grid-item">
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/MVSv5BuojQU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="hero__grid-item">
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/MVSv5BuojQU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="hero__grid-item">
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/MVSv5BuojQU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="hero__grid-item">
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/MVSv5BuojQU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about">
+            <div class="container">
+                <div id="grid-cards" class="about__grid">
+                    <div class="about__item">
+                        <h4 class="block-title about__item-title">
+                            Аренда<br>
+                            оборудования
+                        </h4>
+                        <div class="about__item-glass">
+                            <img src="./assets/img/about1.svg" alt="" class="about__item-img">
+                        </div>
+                        <p class="about__item-text">
+                            Сдаем в аренду различные стойки и платформы, на которых предмет будет левитировать в воздухе
+                            и вращаться.
+                        </p>
+                        <a href="/" class="link link-icon-arrow about__item-link">
+                            <span class="link-icon-arrow__text">Узнать подробнее</span>
+                            <span class="link-icon-arrow__arrow">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 3.00001H11V4.00001H0V3.00001Z" fill="currentColor" />
+                                    <path
+                                        d="M8.53553 0L12.0711 3.53553L8.53553 7.07107L7.82843 6.36396L10.6569 3.53553L7.82843 0.707107L8.53553 0Z"
+                                        fill="#4587F2" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <h4 class="block-title about__item-title">
+                            Сувениры<br>
+                            с индивидуальным дизайном
+                        </h4>
+                        <div class="about__item-glass">
+                            <img src="./assets/img/about2.svg" alt="" class="about__item-img">
+                        </div>
+                        <p class="about__item-text">
+                            Изготавливаем левитирующий сувеннир по индивидуальному дизайну.
+                        </p>
+                        <a href="/" class="link link-icon-arrow about__item-link">
+                            <span class="link-icon-arrow__text">Узнать подробнее</span>
+                            <span class="link-icon-arrow__arrow">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 3.00001H11V4.00001H0V3.00001Z" fill="currentColor" />
+                                    <path
+                                        d="M8.53553 0L12.0711 3.53553L8.53553 7.07107L7.82843 6.36396L10.6569 3.53553L7.82843 0.707107L8.53553 0Z"
+                                        fill="#4587F2" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <h4 class="block-title about__item-title">
+                            Продажа<br>
+                            стоек и платформ
+                        </h4>
+                        <div class="about__item-glass">
+                            <img src="./assets/img/about3.svg" alt="" class="about__item-img">
+                        </div>
+                        <p class="about__item-text">
+                            Представляем каталог разработанных нами решений, доступных для продажи.
+                        </p>
+                        <a href="/" class="link link-icon-arrow about__item-link">
+                            <span class="link-icon-arrow__text">Узнать подробнее</span>
+                            <span class="link-icon-arrow__arrow">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 3.00001H11V4.00001H0V3.00001Z" fill="currentColor" />
+                                    <path
+                                        d="M8.53553 0L12.0711 3.53553L8.53553 7.07107L7.82843 6.36396L10.6569 3.53553L7.82843 0.707107L8.53553 0Z"
+                                        fill="#4587F2" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <h4 class="block-title about__item-title">
+                            Разработка эксклюзивных<br>проектов
+                        </h4>
+                        <div class="about__item-glass">
+                            <img src="./assets/img/about4.svg" alt="" class="about__item-img">
+                        </div>
+                        <p class="about__item-text">
+                            Любые материалы, форма и количество встроенных левитационных устройство разной мощности.
+                        </p>
+                        <a href="/" class="link link-icon-arrow about__item-link">
+                            <span class="link-icon-arrow__text">Узнать подробнее</span>
+                            <span class="link-icon-arrow__arrow">
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 3.00001H11V4.00001H0V3.00001Z" fill="currentColor" />
+                                    <path
+                                        d="M8.53553 0L12.0711 3.53553L8.53553 7.07107L7.82843 6.36396L10.6569 3.53553L7.82843 0.707107L8.53553 0Z"
+                                        fill="#4587F2" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section info">
+            <div class="container">
+                <h2 class="title info__title">Посмотрите видео о нашей компании</h2>
+
+                <div class="info__grid">
+                    <div class="info__grid-column">
+                        <div class="info__video">
+                            <div class="video">
+                                <iframe class="video__media" src="https://www.youtube.com/embed/MVSv5BuojQU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__grid-column">
+                        <div class="info__grid-item">
+                            <h4 class="block-title block-title_large-fix info__grid-item-title">
+                                Работаем и развиваемся с <span class="block-title__large">2015</span> года
+                            </h4>
+                            <p class="info__grid-item-text">
+                                в сфере рекламно-производственной деятельности, производства и поставки сувенирной
+                                продукции
+                            </p>
+                        </div>
+                        <div class="info__grid-item">
+                            <h4 class="block-title info__grid-item-title">
+                                Собственная торговая марка
+                            </h4>
+                            <p class="info__grid-item-text">
+                                и запатентованные технологии магнитной левитации
+                            </p>
+                        </div>
+                        <div class="info__grid-item">
+                            <h4 class="block-title info__grid-item-title">
+                                Собственное производство
+                            </h4>
+                            <p class="info__grid-item-text">
+                                на территории Санкт-Петербурга. Мы НЕ закупаем готовые товары,<br>все собирается вручную
+                                на нашей площадке.
+                            </p>
+                        </div>
+                        <div class="info__grid-item">
+                            <h4 class="block-title block-title_large-fix info__grid-item-title">
+                                Более <span class="block-title__large">1000</span>
+                            </h4>
+                            <p class="info__grid-item-text">
+                                выполненных проектов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="section customers">
+            <div class="container">
+                <div class="customers__grid">
+                    <div class="customers__grid-item">
+                        <h2 class="title info__title">Наши клиенты</h2>
+                    </div>
+                    <div class="customers__grid-item">
+                        <div class="customers__body">
+                            <div class="customers__body-row">
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer1.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer2.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer3.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer4.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer5.png" alt="" class="customers__body-item-img">
+                                </div>
+                            </div>
+                            <div class="customers__body-row">
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer6.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer7.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer8.png" alt="" class="customers__body-item-img">
+                                </div>
+                                <div class="customers__body-item">
+                                    <img src="./assets/img/logo-customer9.png" alt="" class="customers__body-item-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section works">
+            <div class="container">
+                <div class="banner-media-back works__glass">
+                    <div class="media-back media-back_linear-back">
+                        <img src="./assets/img/banner1.png" alt="" class="img">
+                    </div>
+
+                    <div class="banner-media-back__content works__content">
+                        <h2 class="title title_white works__title">Открытые инновации</h2>
+
+                        <div class="content-divider works__content-info">
+                            <div class="content-divider__item">
+                                <a href="/" class="btn btn-icon ">
+                                    <img src="./assets/img/photo-icon.svg" alt="" class="btn-icon__img">
+                                    <span class="btn__text">Фотографии с мероприятия</span>
+                                </a>
+                            </div>
+                            <div class="content-divider__item">
+                                <a href="/" class="btn btn-icon">
+                                    <img src="./assets/img/yt-border.svg" alt="" class="btn-icon__img">
+                                    <span class="btn__text">Видеоотчёт</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__footer">
+                    <a href="/" class="link link-icon-arrow about__item-link">
+                        <span class="link-icon-arrow__text">Перейти в Портфолио работ</span>
+                        <span class="link-icon-arrow__arrow">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.00001H11V4.00001H0V3.00001Z" fill="currentColor" />
+                                <path
+                                    d="M8.53553 0L12.0711 3.53553L8.53553 7.07107L7.82843 6.36396L10.6569 3.53553L7.82843 0.707107L8.53553 0Z"
+                                    fill="#4587F2" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contacts">
+            <div class="container">
+                <div class="contacts__grid">
+                    <div class="contacts__grid-item">
+                        <h2 class="title contacts__title">Контакты</h2>
+                    </div>
+                    <div class="contacts__grid-item">
+                        <div class="contacts__item">
+                            <div class="contacts__item-paragraph">
+                                <h4 class="block-title contacts__item-title">Санкт-Петербург</h4>
+                                <p class="contacts__item-text">ул.Мебельная, 2, корпус 3</p>
+                            </div>
+                            <div class="contacts__item-paragraph">
+                                <p class="contacts__item-text"><a href="tel:88123170014" class="link">+7 (812) 317-00-14</a></p>
+                                <a href="/" class="link contacts__item-link">zakaz@flystand.ru</a>
+                            </div>
+                            <div class="contacts__item-paragraph">
+                                <p class="contacts__item-text">ПН-ПТ 09:00-18:00</p>
+                                <p class="contacts__item-text">Выходные: по договорённости</p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-paragraph">
+                                <h4 class="block-title contacts__item-title">Москва</h4>
+                                <p class="contacts__item-text">ул. Звездная, 11</p>
+                            </div>
+                            <div class="contacts__item-paragraph">
+                                <p class="contacts__item-text"><a href="tel:84994900637" class="link">+7 (499) 490-06-37</a></p>
+                                <a href="/" class="link contacts__item-link">zakaz@flystand.ru</a>
+                            </div>
+                            <div class="contacts__item-paragraph">
+                                <p class="contacts__item-text">ПН-ПТ 09:00-18:00</p>
+                                <p class="contacts__item-text">Выходные: по договорённости</p>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-paragraph contacts__item-paragraph_mb-large">
+                                <h4 class="block-title contacts__item-title">Мы в соцсетях</h4>
+                            </div>
+                            <div class="link-icon__wrapper contacts__item-link-paragraph">
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/vk-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/ig-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                                <a href="/" class="link-icon">
+                                    <img src="./assets/img/yt-icon.svg" alt="" class="link-icon__img">
+                                </a>
+                            </div>
+                            <a href="/" class="link-full-dress">
+                                <img src="./assets/img/wa-icon.svg" alt="" class="link-full-dress__img">
+                                <span class="link-full-dress__text">Написать в мессенджер</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section map">
+            <div class="container">
+                <div class="map__glass">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abbbb2a1460b84018b697000f0ab2a608b0c64d47277f73fbe24a3f8ae43fc46f&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="logo footer__logo">
+                    <a href="/" class="logo__link">
+                        <img src="data:image/png;base64,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" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <nav class="navbar footer__navbar">
+                    <div class="navbar__content">
+                        <ul class="navbar__list">
+                            <li class="navbar__list-item">
+                                <a href="/" class="navbar__list-link">Услуги</a>
+                            </li>
+                            <li class="navbar__list-item">
+                                <a href="/" class="navbar__list-link">О нас</a>
+                            </li>
+                            <li class="navbar__list-item">
+                                <a href="/" class="navbar__list-link">Технология</a>
+                            </li>
+                            <li class="navbar__list-item">
+                                <a href="/" class="navbar__list-link">Портфолио</a>
+                            </li>
+                            <li class="navbar__list-item">
+                                <a href="/" class="navbar__list-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <p class="footer__moreover-text">© 2019 The Collective Podcast</p>
+        </div>
+    </footer>
+
+    <div id="overflow" class="overflow">
+        <div id="overflow-event" class="overflowEvent"></div>
+        <div class="modal-city">
+            <button id="modal-city-close" class="modal-city__close">
+                <span></span>
+                <span></span>
+            </button>
+            <h4 class="block-title modal-city__title">Выберите город:</h4>
+            <input type="text" name="your-city" id="modal-form-input" class="input modal-city__input" placeholder="Ваш город...">
+            <div id="modal-city-body" class="modal-city__body">
+                <p class="modal-city__body-item">Москва</p>
+                <p class="modal-city__body-item">Санкт-Петербург</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container lax-container">
+        <img src="./assets/img/lax1.png" alt="" class="lax-item lax-item1">
+        <img src="./assets/img/lax2.png" alt="" class="lax-item lax-item2">
+        <img src="./assets/img/lax3.png" alt="" class="lax-item lax-item3">
+        <img src="./assets/img/lax4.png" alt="" class="lax-item lax-item4">
+    </div>
+
+    
+</body>
+
+</html>
